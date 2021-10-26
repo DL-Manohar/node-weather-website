@@ -10,7 +10,7 @@ document.querySelector('button').addEventListener('click',(e)=>{
     msg1.textContent = "Loading..."
     msg2.textContent = ""
 
-    let address = "http://localhost:3000/weather?address=";
+    let address = "/weather?address=";
     let location = document.querySelector('input').value;
     
     fetch(address + location).then((response)=>{
